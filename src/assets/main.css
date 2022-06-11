@@ -6,11 +6,10 @@ h2 {
   font-size: 26px;
 }
 .container {
-  max-width: 1120px;
+  max-width: 1010px;
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 .title {
@@ -22,7 +21,7 @@ h2 {
 .form {
   max-width: 450px;
   padding: 10px;
-  background-color: rgb(198, 229, 194);
+  background-color: rgb(220, 181, 108);
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -55,6 +54,6 @@ h2 {
 }
 
 .link {
-  color: rgba(59, 172, 237, 0.9);
+  color: rgba(16, 156, 237, 0.9);
   cursor: pointer;
 }

@@ -16,13 +16,18 @@
 
 <script>
 import { ref } from "vue";
+import { useLogin } from "../composables/useLogin";
 export default {
-  setup() {
+  setup(props, context) {
+    const { signin, error } = useLogin();
     const email = ref("");
     const password = ref("");
 
-    const handleSubmit = () => {
-      console.log(email.value, password.value);
+    const handleSubmit = async () => {
+      const result = await signin(email.value, password.value);
+      if (!error.value) {
+        context.emit("login"); 
+      }
     };
 
     return {
